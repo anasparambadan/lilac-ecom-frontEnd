@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://lilac-ecom.onrender.com";
 
 // const token = localStorage.getItem('user')?JSON.parse(localStorage.getItem('user')).token:null
 // console.log(token,'token......')

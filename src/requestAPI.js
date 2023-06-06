@@ -1,9 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "https://lilac-ecom.onrender.com";
+const BASE_URL = "http://localhost:5000";
 
-// const token = localStorage.getItem('user')?JSON.parse(localStorage.getItem('user')).token:null
-// console.log(token,'token......')
+
 
 
 
@@ -12,7 +11,6 @@ export const publicRequest = axios.create({
 });
 export const userRequest = axios.create({
   baseURL: BASE_URL,
-  // headers: { authorization: `Bearer ${token}` },
 });
 userRequest.interceptors.request.use((req)=>{
   if(localStorage.getItem('user')){
